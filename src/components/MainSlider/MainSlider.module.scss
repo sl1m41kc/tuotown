@@ -1,0 +1,75 @@
+@import './../../shared/fonts/fonts.scss';
+@import './../../shared/styles/colors.scss';
+
+.swiper {
+    .arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        position: absolute;
+        z-index: 2;
+        top: 481px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        transition: border 0.3s;
+
+        &:hover {
+            border: 1px solid $active_light;
+            cursor: pointer;
+        }
+    }
+
+    .prev {
+        left: 10%;
+        background-image: url(./prev.svg);
+    }
+
+    .next {
+        right: 10%;
+        background-image: url(./next.svg);
+    }
+
+    .swiper_pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        position: absolute;
+        bottom: 76px !important;
+        z-index: 1;
+    }
+
+    .bullet {
+        color: #fff;
+        width: 19px;
+        height: 19px;
+        display: block;
+        line-height: 19px;
+        font-family: Montserrat-SemiBold;
+        transition: background-color 0.5s;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .bullet_active {
+        color: #ffffff;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: ease background-color 0.2s;
+    }
+}
+
+.slide {
+    height: 590px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+}
