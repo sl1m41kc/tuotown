@@ -1,0 +1,118 @@
+@import './../../../shared/fonts/fonts.scss';
+@import './../../../shared/styles/colors.scss';
+.header {
+    width: 100vw;
+    height: 71px;
+    background-color: rgba(33, 33, 33, 0.8);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+    .content_wrapper {
+        width: 1200px;
+        height: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contacts_and_sidebar_button {
+            display: flex;
+            gap: 29px;
+
+            .number {
+                font-family: Montserrat-Regular;
+                font-size: 20px;
+                color: #ffffff;
+                text-decoration: none;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $active_light;
+                }
+            }
+
+            .sidebar_button *,
+            .map_pin_button * {
+                transition: 0.2s;
+            }
+
+            .sidebar_button:hover,
+            .map_pin_button:hover {
+                * {
+                    stroke: $active_light;
+                }
+                cursor: pointer;
+            }
+        }
+
+        .header_buttons {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            height: 23px;
+            position: relative;
+
+            .cart_button,
+            .mail_button *,
+            .search * {
+                transition: 0.2s;
+            }
+
+            .cart_button:hover {
+                fill: $active_light;
+            }
+
+            .mail_button:hover {
+                * {
+                    stroke: $active_light;
+                }
+            }
+
+            .search_block {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+
+                .search_area {
+                    width: 0;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    background: none;
+                    transition: width 0.5s ease;
+                }
+
+                &:hover > .search_area,
+                .search_area:focus {
+                    width: 150px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 20px;
+                    outline: none;
+                    padding-left: 15px;
+                    padding-right: 35px;
+                    display: block;
+                }
+
+                .search {
+                    right: 7px;
+                    position: absolute;
+
+                    &:hover {
+                        cursor: pointer;
+                        * {
+                            stroke: $active_light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

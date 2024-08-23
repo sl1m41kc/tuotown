@@ -1,0 +1,183 @@
+@import './../../../shared/styles/colors.scss';
+@import './../../../shared/fonts/fonts.scss';
+
+.footer {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer_title {
+        font-size: 17px;
+        color: #ffffff;
+        font-family: Montserrat-SemiBold;
+    }
+
+    .top_footer_container {
+        min-width: 100%;
+        background-color: $dark;
+
+        .top_footer {
+            max-width: 1200px;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            padding: 44px 15px;
+            margin: auto;
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 29px;
+                max-width: 372px;
+
+                .logo_and_caption {
+                    display: flex;
+                    gap: 26px;
+                    align-items: center;
+
+                    .caption {
+                        font-size: 13px;
+                        font-family: Montserrat-SemiBold;
+                        color: #ffffff;
+                        transition: 0.2s;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $active_light;
+                        }
+                    }
+                }
+
+                .about_text {
+                    font-size: 13px;
+                    font-family: Montserrat-Regular;
+                    font-weight: 200;
+                    color: #ffffff;
+                    line-height: 20px;
+                }
+            }
+
+            .nav_and_socials {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                max-width: 383px;
+                padding-top: 13px;
+
+                .nav_info,
+                .nav_catalog {
+                    display: flex;
+                    gap: 25px;
+                    flex-direction: column;
+                    max-width: 420px;
+
+                    .nav {
+                        display: flex;
+                        gap: 20px;
+                        flex-wrap: wrap;
+
+                        .nav_item {
+                            font-size: 14px;
+                            font-family: Montserrat-Regular;
+                            color: rgba(255, 255, 255, 0.5);
+                            text-decoration: none;
+                            transition: 0.2s;
+
+                            &:hover {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    gap: 23px;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    .social_list {
+                        display: flex;
+                        gap: 8px;
+
+                        .social_item {
+                            width: 31px;
+                            height: 31px;
+                            background-color: $dark_light;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 0.2s;
+
+                            &:hover {
+                                background-color: $active_light;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+                max-width: 279px;
+                padding-top: 13px;
+
+                .number {
+                    font-size: 20px;
+                    font-family: Montserrat-SemiBold;
+                    color: #ffffff;
+                    text-decoration: none;
+                    margin-top: 17px;
+                    transition: 0.2s;
+                }
+
+                .email,
+                .number {
+                    &:hover {
+                        color: $active_light;
+                    }
+                }
+
+                .email,
+                .work_mode,
+                .adress {
+                    font-size: 14px;
+                    font-family: Montserrat-Regular;
+                    color: #ffffff;
+                    text-decoration: none;
+                    line-height: 19px;
+                    transition: 0.2s;
+                }
+
+                .work_mode {
+                    margin-top: 10px;
+                }
+
+                .site_stat {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .bottom_footer {
+        display: flex;
+        gap: 300px;
+        align-items: center;
+        padding: 0 15px;
+        // margin: auto;
+        min-height: 88px;
+        max-width: 1200px;
+
+        .copyright {
+            font-size: 12px;
+            font-family: Montserrat-Regular;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
