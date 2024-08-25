@@ -10,7 +10,8 @@
     .footer_title {
         font-size: 17px;
         color: #ffffff;
-        font-family: Montserrat-SemiBold;
+        font-family: Montserrat;
+        font-variation-settings: 'wght' 600;
     }
 
     .top_footer_container {
@@ -39,7 +40,8 @@
 
                     .caption {
                         font-size: 13px;
-                        font-family: Montserrat-SemiBold;
+                        font-family: Montserrat;
+                        font-variation-settings: 'wght' 600;
                         color: #ffffff;
                         transition: 0.2s;
                         text-decoration: none;
@@ -52,8 +54,7 @@
 
                 .about_text {
                     font-size: 13px;
-                    font-family: Montserrat-Regular;
-                    font-weight: 200;
+                    font-family: Montserrat;
                     color: #ffffff;
                     line-height: 20px;
                 }
@@ -80,7 +81,7 @@
 
                         .nav_item {
                             font-size: 14px;
-                            font-family: Montserrat-Regular;
+                            font-family: Montserrat;
                             color: rgba(255, 255, 255, 0.5);
                             text-decoration: none;
                             transition: 0.2s;
@@ -129,7 +130,8 @@
 
                 .number {
                     font-size: 20px;
-                    font-family: Montserrat-SemiBold;
+                    font-family: Montserrat;
+                    font-variation-settings: 'wght' 600;
                     color: #ffffff;
                     text-decoration: none;
                     margin-top: 17px;
@@ -147,7 +149,7 @@
                 .work_mode,
                 .adress {
                     font-size: 14px;
-                    font-family: Montserrat-Regular;
+                    font-family: Montserrat;
                     color: #ffffff;
                     text-decoration: none;
                     line-height: 19px;
@@ -176,7 +178,7 @@
 
         .copyright {
             font-size: 12px;
-            font-family: Montserrat-Regular;
+            font-family: Montserrat;
             color: rgba(255, 255, 255, 0.5);
         }
     }

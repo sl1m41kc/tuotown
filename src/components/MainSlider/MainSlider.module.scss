@@ -47,7 +47,8 @@
         height: 19px;
         display: block;
         line-height: 19px;
-        font-family: Montserrat-SemiBold;
+        font-family: Montserrat;
+        font-weight: 600;
         border-radius: 50%;
         cursor: pointer;
         user-select: none;
@@ -81,14 +82,15 @@
     top: 15vh;
     gap: 24px;
     .slide_title {
-        font-family: Jura-Regular;
+        font-family: 'Jura';
+        font-weight: 400;
         font-size: 41px;
         color: #ffffff;
     }
 
     .slide_text {
         font-size: 19px;
-        font-family: Montserrat-Regular;
+        font-family: Montserrat;
         max-width: 450px;
         color: #ffffff;
         margin-bottom: 15px;

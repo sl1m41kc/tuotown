@@ -1,19 +1,11 @@
 @font-face {
-    font-family: Montserrat-Regular;
-    src: url(./Montserrat/static/Montserrat-Regular.ttf);
+    font-family: 'Montserrat';
+    src: url('./Montserrat/Montserrat-VariableFont.woff2') format('woff2');
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: Montserrat-SemiBold;
-    src: url(./Montserrat/static/Montserrat-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: Montserrat-Medium;
-    src: url(./Montserrat/static/Montserrat-Medium.ttf);
-}
-
-@font-face {
-    font-family: Jura-Regular;
-    src: url(./Jura/static/Jura-Regular.ttf);
+    font-family: 'Jura';
+    src: url(./Jura/Jura-VariableFont.woff2);
+    font-weight: normal;
 }
