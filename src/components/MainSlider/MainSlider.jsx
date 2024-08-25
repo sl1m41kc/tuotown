@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { useSwiper } from 'swiper/react';
-import slideImage1440 from './slider_bg_1440.png';
-import slideImage768 from './slider_bg_768.png';
+import slideImage1440 from './slider_bg_1440.webp';
+import slideImage768 from './slider_bg_768.webp';
+import { Button } from '../common/Button/Button';
 
 function NavigateButtons() {
     const swiper = useSwiper();
@@ -25,18 +26,18 @@ function NavigateButtons() {
     );
 }
 
-function SlideContent() {
+function SlideImg() {
     return (
-        <div className={styles.slide}>
+        <div className={styles.slide_img}>
             <picture>
                 <source
                     srcSet={slideImage1440}
-                    type="image/png"
+                    type="image/webp"
                     media="(min-width: 769px)"
                 />
                 <source
                     srcSet={slideImage768}
-                    type="image/png"
+                    type="image/webp"
                     media="(max-width: 768px)"
                 />
                 <img loading="lazy" src="./slider_bg_1440" alt="img" />
@@ -48,7 +49,7 @@ function SlideContent() {
 export function MainSlider() {
     const swipersParams = {
         className: styles.swiper,
-        modules: [Pagination],
+        modules: [Pagination, Autoplay],
         speed: 900,
         pagination: {
             clickable: true,
@@ -61,24 +62,44 @@ export function MainSlider() {
             bulletClass: styles.bullet, //класс для одного буллета
             bulletActiveClass: styles.bullet_active, //класс для активного буллета
         },
+        autoplay: {
+            delay: 5000,
+            pauseOnMouseEnter: true,
+        },
+        loop: true,
     };
 
     return (
         <Swiper {...swipersParams}>
             <SwiperSlide>
-                <SlideContent />
+                <div className={styles.slide_content}>
+                    <h1 className={styles.slide_title}>
+                        Исключительное качество без компромиссов
+                    </h1>
+                    <p className={styles.slide_text}>
+                        Ножи «Tuotown» – это главный инструмент поваров и секрет
+                        кулинарного мастерства
+                    </p>
+                    <Button
+                        buttonOption="first"
+                        text="ПОДРОБНЕЕ"
+                        textColor="#ffffff"
+                        link="/#"
+                    />
+                </div>
+                <SlideImg />
             </SwiperSlide>
 
             <SwiperSlide>
-                <SlideContent />
+                <SlideImg />
             </SwiperSlide>
 
             <SwiperSlide>
-                <SlideContent />
+                <SlideImg />
             </SwiperSlide>
 
             <SwiperSlide>
-                <SlideContent />
+                <SlideImg />
             </SwiperSlide>
 
             <NavigateButtons />

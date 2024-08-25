@@ -48,7 +48,6 @@
         display: block;
         line-height: 19px;
         font-family: Montserrat-SemiBold;
-        transition: background-color 0.5s;
         border-radius: 50%;
         cursor: pointer;
         user-select: none;
@@ -58,11 +57,10 @@
         color: #ffffff;
         background-color: #fff;
         border-radius: 50%;
-        transition: ease background-color 0.2s;
     }
 }
 
-.slide {
+.slide_img {
     height: 590px;
     overflow: hidden;
 
@@ -71,5 +69,28 @@
         height: 100%;
         object-fit: cover;
         object-position: 0 0;
+    }
+}
+
+.slide_content {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 17%;
+    top: 15vh;
+    gap: 24px;
+    .slide_title {
+        font-family: Jura-Regular;
+        font-size: 41px;
+        color: #ffffff;
+    }
+
+    .slide_text {
+        font-size: 19px;
+        font-family: Montserrat-Regular;
+        max-width: 450px;
+        color: #ffffff;
+        margin-bottom: 15px;
     }
 }

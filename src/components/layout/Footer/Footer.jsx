@@ -1,19 +1,11 @@
 import styles from './Footer.module.scss';
 import Logo from '../../common/Logo/Logo';
-import clsx from 'clsx';
 import fb from './fb.svg';
 import inst from './inst.svg';
 import vk from './vk.svg';
 import yt from './yt.svg';
 import site_stat from './site_stat.svg';
-import author from './author.png';
-
-/*
-    !todo: сделать ховеры ссылок
-    ?todo: поставить ссылку на google maps в adress
-    //!todo: fix footer
-    todo: оптимизировать картинки
-*/
+import author from './author.webp';
 
 export function Footer() {
     return (
@@ -23,7 +15,7 @@ export function Footer() {
                     <article className={styles.about}>
                         <div className={styles.logo_and_caption}>
                             <Logo width="194px" />
-                            <a href="#" className={styles.caption}>
+                            <a href="/#" className={styles.caption}>
                                 легендарные ножи, создающие шедевры
                             </a>
                         </div>
@@ -47,22 +39,22 @@ export function Footer() {
                             <h4 className={styles.footer_title}>Информация</h4>
                             <ul className={styles.nav}>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Главная
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Новости
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         О компании
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Контакты
                                     </a>
                                 </li>
@@ -72,22 +64,22 @@ export function Footer() {
                             <h4 className={styles.footer_title}>Каталог</h4>
                             <ul className={styles.nav}>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Кухонные ножи
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Складные ножи
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Точилки для ножей
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.nav_item} href="">
+                                    <a className={styles.nav_item} href="/#">
                                         Аксессуары
                                     </a>
                                 </li>
@@ -98,16 +90,16 @@ export function Footer() {
                                 Мы в соцсетях
                             </h4>
                             <div className={styles.social_list}>
-                                <a href="" className={styles.social_item}>
+                                <a href="/#" className={styles.social_item}>
                                     <img src={fb} alt="facebook" />
                                 </a>
-                                <a href="" className={styles.social_item}>
+                                <a href="/#" className={styles.social_item}>
                                     <img src={vk} alt="vk" />
                                 </a>
-                                <a href="" className={styles.social_item}>
+                                <a href="/#" className={styles.social_item}>
                                     <img src={inst} alt="inst" />
                                 </a>
-                                <a href="" className={styles.social_item}>
+                                <a href="/#" className={styles.social_item}>
                                     <img src={yt} alt="yt" />
                                 </a>
                             </div>
@@ -133,7 +125,7 @@ export function Footer() {
                             Россия, Москва, МКАД, 19-й километр, вл20с1, вход Ф,
                             22-68-70
                         </p>
-                        <a href="" className={styles.site_stat}>
+                        <a href="/#" className={styles.site_stat}>
                             <img
                                 src={site_stat}
                                 alt="site statistic"

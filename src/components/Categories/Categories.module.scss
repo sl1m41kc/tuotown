@@ -22,10 +22,12 @@
             color: rgba(255, 255, 255, 0.5);
             font-family: Montserrat-Medium;
             font-size: 17px;
+            transition: 0.2s;
         }
 
-        .category_img {
+        &_img {
             fill: #878787;
+            transition: 0.2s;
         }
 
         &:hover > .category_img {

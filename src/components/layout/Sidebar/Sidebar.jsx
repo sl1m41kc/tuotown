@@ -19,37 +19,37 @@ export function Sidebar({ sidebarStatus, setSidebarStatus }) {
                             <span className={styles.close_button}></span>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 КУХОННЫЕ НОЖИ TUOTOWN
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 СКЛАДНЫЕ НОЖИ TUOTOWN
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 КУХОННЫЕ НОЖИ QXF
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 ТОЧИЛЬНЫЕ КАМНИ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 НАБОРЫ ДЛЯ BBQ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 КУХОННЫЕ ПРИНАДЛЕЖНОСТИ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.top_nav_item} href="f">
+                            <a className={styles.top_nav_item} href="/#">
                                 ТУРИСТИЧЕСКИЕ ТОВАРЫ
                             </a>
                         </li>
@@ -58,22 +58,22 @@ export function Sidebar({ sidebarStatus, setSidebarStatus }) {
                 <nav className={styles.bottom_nav_wrapper}>
                     <ul className={styles.bottom_nav}>
                         <li>
-                            <a className={styles.bottom_nav_item} href="f">
+                            <a className={styles.bottom_nav_item} href="/#">
                                 НОВОСТИ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.bottom_nav_item} href="f">
+                            <a className={styles.bottom_nav_item} href="/#">
                                 О КОМПАНИИ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.bottom_nav_item} href="f">
+                            <a className={styles.bottom_nav_item} href="/#">
                                 КОНТАКТЫ
                             </a>
                         </li>
                         <li>
-                            <a className={styles.bottom_nav_item} href="f">
+                            <a className={styles.bottom_nav_item} href="/#">
                                 КАК ПРОЕХАТЬ
                             </a>
                         </li>

@@ -1,0 +1,34 @@
+@import './../../../shared/styles/colors.scss';
+@import './../../../shared/fonts/fonts.scss';
+
+.button {
+    border: 2px solid $active;
+    border-radius: 27px;
+    padding: 16px 34px;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.first {
+    transition: border-radius 0.2s;
+    color: #ffffff;
+    background-color: transparent;
+
+    &:hover {
+        border-radius: 0px;
+        cursor: pointer;
+        border: 3px solid $active;
+    }
+
+    &:active {
+        color: $active;
+        border: 3px solid $active;
+    }
+
+    &:disabled {
+        border: 1px solid #828282;
+        color: #828282;
+        background-color: #e0e0e0;
+    }
+}
