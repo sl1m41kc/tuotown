@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import Logo from './../../common/Logo/Logo';
 import { ReactComponent as SidebarButton } from './sidebar-button.svg';
 import { ReactComponent as MapPinButton } from './map-pin.svg';
-import { ReactComponent as Cart } from './cart.svg';
+import { ReactComponent as Cart } from './../../../shared/img/cart.svg';
 import { ReactComponent as Mail } from './mail.svg';
 import { ReactComponent as Search } from './search.svg';
 
